@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+  <!--  SweetAlert2 Library -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1> Quiz App</h1>
+
+    <!-- Timer always in box -->
+    <div id="timer-box">
+      <p>⏰ Time Left: <span id="time">1:59</span></p>
+    </div>
+
+    <div id="main">
+      <h2 id="ques">Question will appear here</h2>
+      <div id="question-box">
+        <div class="options">
+          <label class="option">
+            <input type="radio" name="options" value="1" onclick="trigger()"> 
+            <span id="opt1"></span>
+          </label>
+          <label class="option">
+            <input type="radio" name="options" value="2" onclick="trigger()"> 
+            <span id="opt2"></span>
+          </label>
+          <label class="option">
+            <input type="radio" name="options" value="3" onclick="trigger()"> 
+            <span id="opt3"></span>
+          </label>
+        </div>
+      </div> 
+
+      <button id="btn" onclick="nextQuestion()" disabled>Next</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>  
+</body>
+</html>

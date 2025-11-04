@@ -1,0 +1,179 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  color: #fff;
+  overflow: hidden;
+}
+
+/*  Main Quiz Container */
+.quiz-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 24px;
+  padding: 45px 35px;
+  width: 90%;
+  max-width: 520px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+  transition: transform 0.3s ease;
+}
+
+.quiz-container:hover {
+  transform: translateY(-3px);
+}
+
+h1 {
+  color: #00f2fe;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/*  Timer styled box */
+#timer-box {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 14px;
+  margin: 10px auto 25px;
+  font-weight: 600;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 12px rgba(0, 242, 254, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/*  Question Box */
+#main {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.1),
+              0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/*  Question Box */
+#question-box {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+#question-box:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: scale(1.02);
+}
+
+/*  Options */
+.options {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.option:hover {
+  background: rgba(0, 242, 254, 0.25);
+  border: 2px solid #00f2fe;
+  transform: scale(1.03);
+}
+
+input[type="radio"] {
+  accent-color: #00f2fe;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+/*  Next Button */
+button {
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 13px 35px;
+  border-radius: 35px;
+  font-weight: 600;
+  font-size: 1rem;   
+  cursor: pointer;
+  margin-top: 25px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 6px 15px rgba(0, 242, 254, 0.3);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.08);  
+  box-shadow: 0 0 18px rgba(0, 242, 254, 0.4);
+}
+
+/*  Timer Text */
+#time {
+  font-weight: bold;
+  color: #00f2fe;
+}
+
+/* ✨ Fade Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* SweetAlert Professional Look */
+.swal2-popup {
+  font-family: "Poppins", sans-serif !important;
+  border-radius: 20px !important;
+  background: #1c1f26 !important;
+  color: #fff !important;
+}
+
+.swal2-title {
+  color: #00f2fe !important;
+}
+
+.swal2-success-ring {
+  border: 4px solid #4facfe !important;
+}
+
+.swal2-error {
+  background: #ff5f6d !important;
+}
